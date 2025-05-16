@@ -14,7 +14,7 @@ const Login = () => {
         const request = Object.fromEntries(formData.entries());
         const response = await login(request)
         if (response.status === 200) {
-            navigate('/test-deploy-project')
+            navigate('/')
         }
     };
 

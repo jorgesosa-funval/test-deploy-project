@@ -9,8 +9,8 @@ export default function Home() {
         listUsers()
             .then(response => setUsers(response.data))
             .catch(err => console.log(err))
-    }, [])
-    console.log(users)
+    }, []) 
+    
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
             <h1 className="text-3xl font-bold mb-8 text-gray-800">Lista de Usuarios</h1>
