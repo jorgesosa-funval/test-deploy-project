@@ -17,7 +17,7 @@ instance.interceptors.response.use(
         if (error.response.status === 401 && window.location.pathname !== "/test-deploy-project/login") {
             // Handle unauthorized access
             console.error("Unauthorized access - redirecting to login");
-            window.location.href = "/test-deploy-project/login";
+            window.location.href = "/test-deploy-project/#/login";
         }
         return Promise.reject(error);
     }
